@@ -8,7 +8,7 @@ public class ContactDamager : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Destroy(gameObject);
+        Destroy(gameObject);    // 무언가에 부딪히면 나 스스로플 파괴
 
         Life life = other.GetComponent<Life>();
 
