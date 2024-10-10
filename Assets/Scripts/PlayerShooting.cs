@@ -5,20 +5,25 @@ using UnityEngine.InputSystem;
 
 public class PlayerShooting : MonoBehaviour
 {
-    public GameObject prefab;
+    public GameObject normalBullet;
+    public GameObject specialBullet;
     public GameObject shootPoint;
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Instantiate(prefab, transform.position, transform.rotation);
+            Instantiate(normalBullet, transform.position, transform.rotation);
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            Instantiate(specialBullet, transform.position, transform.rotation);
         }
     }
 
     public void OnFire(InputValue value)
     {
-        GameObject clone = Instantiate(prefab);
+        GameObject clone = Instantiate(normalBullet);
 
         clone.transform.position = shootPoint.transform.position;
         clone.transform.rotation = shootPoint.transform.rotation;

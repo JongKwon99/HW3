@@ -33,6 +33,6 @@ public class PlayerMovement : MonoBehaviour
             0,
             movementValue.y * Time.deltaTime);
 
-        transform.Rotate(0, lookValue, Time.deltaTime, 0);
+        transform.Rotate(0, lookValue * Time.deltaTime, 0);
     }
 }

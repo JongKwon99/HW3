@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  rotationSpeed: 0.2
+  rotationSpeed: 5
 --- !u!114 &4359091127927842228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -539,7 +539,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4241fbc6cf5a6ec4f8dfbf1552167d79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefab: {fileID: 9091885543679339885, guid: 644634b47913a5746b945b59209bc22a, type: 3}
+  normalBullet: {fileID: 9091885543679339885, guid: 644634b47913a5746b945b59209bc22a,
+    type: 3}
+  specialBullet: {fileID: 6306302250206674754, guid: 47049c8454a12c24191f283ae09f153a,
+    type: 3}
   shootPoint: {fileID: 6781522421255471830}
 --- !u!1 &8197110818949534034
 GameObject:
