@@ -218,6 +218,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8481627166994429515}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 056784e08510fd1478dd0ae22b90765b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8174440541900209633}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 056784e08510fd1478dd0ae22b90765b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4359091127927842228}
   m_SourcePrefab: {fileID: 100100000, guid: 056784e08510fd1478dd0ae22b90765b, type: 3}
 --- !u!1 &3852664839037046434 stripped
 GameObject:
@@ -246,6 +254,51 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.31
   m_Center: {x: 0, y: 0.27, z: 0}
+--- !u!114 &8174440541900209633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3852664839037046434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f350c6491d78b22438e1ea0ab2dc041b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  rotationSpeed: 0
+--- !u!114 &4359091127927842228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3852664839037046434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 59cc8254a9031374e96728592ca70ac6,
+    type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!4 &4484664864005985304 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 056784e08510fd1478dd0ae22b90765b,
