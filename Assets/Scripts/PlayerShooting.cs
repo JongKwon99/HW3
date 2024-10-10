@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerShooting : MonoBehaviour
 {
+    public int speacialBulletNum;
     public GameObject normalBullet;
     public GameObject specialBullet;
     public GameObject shootPoint;
@@ -17,7 +18,12 @@ public class PlayerShooting : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Mouse1))
         {
-            Instantiate(specialBullet, transform.position, transform.rotation);
+            if (speacialBulletNum > 0) 
+            {
+                Instantiate(specialBullet, transform.position, transform.rotation);
+                speacialBulletNum--;
+            }
+            
         }
     }
 

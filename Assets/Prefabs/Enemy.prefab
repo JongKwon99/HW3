@@ -296,11 +296,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2522494469240397964}
-  - component: {fileID: 3798947153223867345}
   - component: {fileID: 8023828273935661446}
   - component: {fileID: 4504331715150305586}
   - component: {fileID: -7637217935473098514}
   - component: {fileID: 8798244484136932693}
+  - component: {fileID: 7904731341523782333}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -316,8 +316,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2903242820024695350}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.521566, y: 5.3943105, z: -18.668}
+  m_LocalRotation: {x: 0, y: 0.32136205, z: 0, w: 0.9469564}
+  m_LocalPosition: {x: -11.834254, y: 5.3943105, z: -27.25383}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -326,28 +326,6 @@ Transform:
   - {fileID: 5767758909056080433}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &3798947153223867345
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2903242820024695350}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 5efebc9ff1bb643cc9fa371b503c0a80, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!136 &8023828273935661446
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -383,7 +361,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9859589853f3394479e70fd3b83958cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 2
 --- !u!54 &-7637217935473098514
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -424,6 +402,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   amount: 5
+--- !u!114 &7904731341523782333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2903242820024695350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4a3a7cea0afde448a640ff28c8aa2a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 10
 --- !u!1 &3623895244205561322
 GameObject:
   m_ObjectHideFlags: 0
