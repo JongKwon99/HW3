@@ -26,12 +26,4 @@ public class PlayerShooting : MonoBehaviour
             
         }
     }
-
-    /*public void OnFire(InputValue value)
-    {
-        GameObject clone = Instantiate(normalBullet);
-
-        clone.transform.position = shootPoint.transform.position;
-        clone.transform.rotation = shootPoint.transform.rotation;
-    }*/
 }

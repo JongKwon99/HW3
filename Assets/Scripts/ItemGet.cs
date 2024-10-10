@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ItemGet : MonoBehaviour
 {
-     public GameObject prefab;
+    public GameObject prefab;
     public Transform shootPoint;
 
     private void OnTriggerEnter(Collider other)
